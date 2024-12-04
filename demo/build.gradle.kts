@@ -4,7 +4,7 @@ plugins {
 	java
 	id("org.springframework.boot") version "3.4.0"
 	id("io.spring.dependency-management") version "1.1.6"
-	kotlin("jvm")
+		kotlin("jvm")
 }
 
 group = "com.example"
@@ -39,7 +39,7 @@ repositories {
 
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-web")
-	implementation(kotlin("stdlib-jdk21"))
+	implementation(kotlin("stdlib-jdk8"))
 
 	compileOnly("org.projectlombok:lombok")
 	runtimeOnly("com.h2database:h2")
