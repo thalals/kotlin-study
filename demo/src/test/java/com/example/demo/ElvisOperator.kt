@@ -15,13 +15,21 @@ class ElvisOperator {
 
         val elvisOperator = null
         println(isNull(elvisOperator ?: true))
+//        isNotAllowanceNull(elvisOperator)
+
     }
 
     fun isNull(x: Boolean?): String {
 
-        if (x == null)
-            return "Null"
+//        if (x == null)
+//            return "Null"
+//
+//        return x.toString()
 
+        return x?.toString() ?: "Null"
+    }
+
+    fun isNotAllowanceNull(x: Boolean): String {
         return x.toString()
     }
 }
